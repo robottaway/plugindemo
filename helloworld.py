@@ -30,7 +30,7 @@ class Helloworld(BotPlugin):
         """
         return {
             "nameofthemonth": "Dave",
-            "runnerups": ["Chad", "Tyrone"],
+            "runnerups": ["Chaz", "Tyrion"],
         }
 
     def check_configuration(self, configuration):
@@ -88,8 +88,6 @@ class Helloworld(BotPlugin):
         If you include --favorite-number, it will also tell you their
         favorite number.
         """
-        if self.config['nameofthemonth'] == args.name:
-            return f"You said the magic word!!!!"
         if args.favorite_number:
             return f"Hello {args.name}, I hear your favorite number is {args.favorite_number}."
         else:
