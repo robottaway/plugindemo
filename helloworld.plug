@@ -1,0 +1,10 @@
+[Core]
+name = HelloWorld
+module = helloworld
+
+[Documentation]
+description = Say hello, world!
+
+[Python]
+version = 3
+
